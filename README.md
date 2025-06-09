@@ -13,7 +13,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<h1 align="center">Hey 👋What's Up?</h1>
+<h1 align="center">Hey 👋 What's Up?</h1>
 
 ###
 
@@ -37,8 +37,11 @@ Here are some ideas to get you started:
 
 ###
 
-<div align="center">
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake.svg" />
+</picture>
 
 ###
 
@@ -56,11 +59,7 @@ Here are some ideas to get you started:
 
 ###
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/modzking4/modzking4/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/modzking4/modzking4/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/modzking4/modzking4/output/github-snake.svg" />
-</picture>
+<img src="https://raw.githubusercontent.com/modzking4/modzking4/output/snake.svg" alt="Snake animation" />
 
 ###
 
@@ -69,5 +68,3 @@ Here are some ideas to get you started:
 </div>
 
 ###
-
-

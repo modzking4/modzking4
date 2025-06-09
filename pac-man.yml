@@ -1,0 +1,27 @@
+name: Generate Pac-Man graph
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  generate-pacman-graph:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Generate Pac-Man graph
+        run: |
+          git clone https://github.com/Platane/snk
+          cd snk
+          bash generate.sh
+          mv output/* ../
+          cd ..
+          git add .
+          git commit -m "Update Pac-Man graph"
+          git push

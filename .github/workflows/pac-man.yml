@@ -23,8 +23,8 @@ jobs:
       # Step 2: Generate the Pac-Man contribution graph
       - name: Generate Pac-Man contribution graph
         run: |
-          # Download the snk script and execute it
-          curl -s https://raw.githubusercontent.com/Platane/snk/master/snk > snk.sh
+          # Download the snk script correctly from the GitHub raw URL
+          curl -sL https://raw.githubusercontent.com/Platane/snk/master/snk > snk.sh
           bash snk.sh -u ${{ github.repository_owner }}
       
       # Debug: List the files in output directory to check if the SVG is generated

@@ -53,6 +53,8 @@ Here are some ideas to get you started:
 
 # Test Pac-Man Graph
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/modzking4/modzking4/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/modzking4/modzking4/output/pacman-contribution-graph.svg">
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/modzking4/modzking4/output/pacman-contribution-graph.svg">
 </picture>
 

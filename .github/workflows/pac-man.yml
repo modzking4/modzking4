@@ -23,15 +23,22 @@ jobs:
       # Step 2: Generate the Pac-Man contribution graph
       - name: Generate Pac-Man contribution graph
         run: |
-          curl -s https://raw.githubusercontent.com/Platane/snk/master/snk() | bash -s -- -u ${{ github.repository_owner }}
-
-      # Step 3: Commit and push the generated Pac-Man graph to the 'output' folder
+          # Download the snk script and execute it
+          curl -s https://raw.githubusercontent.com/Platane/snk/master/snk > snk.sh
+          bash snk.sh -u ${{ github.repository_owner }}
+      
+      # Debug: List the files in output directory to check if the SVG is generated
+      - name: List files in output directory
+        run: |
+          ls -al ./output
+      
+      # Step 3: Commit and Push the generated Pac-Man graph to the 'output' folder
       - name: Commit and Push Pac-Man Contribution Graph
         run: |
-          git add output/pacman-contribution-graph.svg
+          git add ./output/pacman-contribution-graph.svg
           git commit -m "Update Pac-Man contribution graph"
           git push
-
+      
       # Step 4: Deploy the generated file to the 'output' branch
       - name: Deploy to Output Branch
         uses: peaceiris/actions-gh-pages@v3

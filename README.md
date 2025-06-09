@@ -56,26 +56,17 @@ Here are some ideas to get you started:
 
 ###
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/modzking4/modzking4/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/modzking4/modzking4/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/modzking4/modzking4/output/pacman-contribution-graph.svg">
-</picture>
+![pacman contribution graph](https://raw.githubusercontent.com/modzking4/modzking4/output/pacman-contribution-graph.svg)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/modzking4/modzking4/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/modzking4/modzking4/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/modzking4/modzking4/output/github-snake.svg" />
-</picture>
+![github snake](https://raw.githubusercontent.com/modzking4/modzking4/output/github-snake.svg)
 
-###
-
-<img src="https://raw.githubusercontent.com/modzking4/modzking4/output/snake.svg" alt="Snake animation" />
+![snake animation](https://raw.githubusercontent.com/modzking4/modzking4/output/snake.svg)
 
 ###
 
 <div align="center">
-  <img src="https://profile-counter.glitch.me/modzking4/count.svg?"  />
+  <img src="https://profile-counter.glitch.me/modzking4/count.svg?" />
 </div>
 
 ###
+

@@ -56,11 +56,11 @@ Here are some ideas to get you started:
 
 ###
 
-![pacman contribution graph](https://raw.githubusercontent.com/modzking4/modzking4/output/pacman-contribution-graph.svg)
-
-![github snake](https://raw.githubusercontent.com/modzking4/modzking4/output/github-snake.svg)
-
-![snake animation](https://raw.githubusercontent.com/modzking4/modzking4/output/snake.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/modzking4/modzking4/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/modzking4/modzking4/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/modzking4/modzking4/output/github-snake.svg" />
+</picture>
 
 ###
 

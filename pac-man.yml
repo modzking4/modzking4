@@ -1,27 +1,28 @@
-name: Generate Pac-Man graph
+name: Pac-Man Contribution Graph
 
 on:
   push:
     branches:
-      - main
-  pull_request:
-    branches:
-      - main
+      - main  # Trigger on push to the main branch
+  schedule:
+    - cron: "0 0 * * 0"  # This will generate the graph once a week (Sunday)
 
 jobs:
-  generate-pacman-graph:
+  generate-pacman:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
 
-      - name: Generate Pac-Man graph
-        run: |
-          git clone https://github.com/Platane/snk
-          cd snk
-          bash generate.sh
-          mv output/* ../
-          cd ..
-          git add .
-          git commit -m "Update Pac-Man graph"
-          git push
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Generate Pac-Man contribution graph
+      run: |
+        curl -s https://raw.githubusercontent.com/Platane/snk/master/snk() | bash -s -- -u modzking4
+
+    - name: Commit Pac-Man contribution graph
+      run: |
+        git config --global user.email "you@example.com"
+        git config --global user.name "Your Name"
+        git add output/pacman-contribution-graph.svg
+        git commit -m "Add Pac-Man contribution graph"
+        git push
